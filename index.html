@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Athiyah Room's</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="img">👻 Athiyah Room's</div>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="sosial.html">Medsos</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="logout" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+
+    <div class="background"></div>
+
+    <div class="container">
+      <div class="video-wrapper">
+        <video autoplay loop playsinline>
+          <source src="athiyah_jj.mp4" type="video/mp4" />
+        </video>
+        <p class="video-text">Apakah Boleh Aku Post Dan TAG 😭</p>
+      </div>
+
+      <img src="athiyah_2_image_pecah.jpeg" class="athiyah-img" />
+
+      <div class="card">
+        <h1>Selamat Datang</h1>
+        <h2>Di Athiyah Room's</h2>
+        <p>Tempat berkumpulnya member ramah 👻</p>
+        <a href="sosial.html" class="btn-masuk">LANJUTKAN</a>
+      </div>
+    </div>
+
+    <script>
+      if (localStorage.getItem("isLogin") !== "true") {
+        window.location.replace("login.html");
+      }
+    </script>
+    <div class="footer">© 2026 • RILL CODE</div>
+    <script src="script.js"></script>
+  </body>
+</html>
